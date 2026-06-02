@@ -17,9 +17,13 @@
     "type": "git",
     "url": "git://github.com/chriscarpenter12/homebridge-watchdog15.git"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "engines": {
     "homebridge": ">=0.4.8",
-    "node": ">=22"
+    "node": ">=24"
   },
   "bugs": {
     "url": "https://github.com/chriscarpenter12/homebridge-watchdog15/issues"
