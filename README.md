@@ -1,7 +1,7 @@
 # homebridge-watchdog15
 [Homebridge](https://github.com/nfarina/homebridge) plugin for the [Vertiv Geist Watchdog15](https://www.vertiv.com/en-us/products-catalog/monitoring-control-and-management/monitoring/watchdog-15/) Temperature/Humidity Sensor
 
-<p align="center"><img alt="" src="https://raw.githubusercontent.com/dek577/homebridge-watchdog15/master/images/image01.png?sanitize=true" width="30%"><img alt="" src="https://raw.githubusercontent.com/dek577/homebridge-watchdog15/master/images/image02.png?sanitize=true" width="30%"><img alt="" src="https://raw.githubusercontent.com/dek577/homebridge-watchdog15/master/images/image03.png?sanitize=true" width="30%"></p>
+<p align="center"><img alt="" src="https://raw.githubusercontent.com/chriscarpenter12/homebridge-watchdog15/master/images/image01.png?sanitize=true" width="30%"><img alt="" src="https://raw.githubusercontent.com/chriscarpenter12/homebridge-watchdog15/master/images/image02.png?sanitize=true" width="30%"><img alt="" src="https://raw.githubusercontent.com/chriscarpenter12/homebridge-watchdog15/master/images/image03.png?sanitize=true" width="30%"></p>
 
 
 ## Installation
@@ -9,7 +9,7 @@
 You need to have [Homebridge](https://github.com/nfarina/homebridge) installed first - refer to the repo for instructions. Then run the following command to install homebridge-watchdog15:
 
 ```
-sudo npm install -g homebridge-watchdog15
+sudo npm install -g @chriscarpenter12/homebridge-watchdog15
 ```
 
 ## Configuration
@@ -42,7 +42,7 @@ The configuration can contain the following properties:
 * `warningLoDewpoint` \<number\> **optional** \(Default: **"none"**): Defines a low dewpoint limit, which if exceeded, generates a
     fault notification in HomeKit. The value should be in the same units of measure configured in the Watchdog15 web interface.
 
-* `updateInterval` \<number\> **optional** \(Default: **60**\): Defines the update interval (in seconds) to refresh the data from 
+* `updateInterval` \<number\> **optional** \(Default: **60**\): Defines the update interval (in seconds) to refresh the data from
    the Watchdog15. Default is **60** seconds. Homekit calls to get data between these updates will return a cached value from the
    last update.
 
